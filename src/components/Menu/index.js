@@ -1,17 +1,20 @@
 import React from 'react';
-import Logo from '../../assets/img/Logo.png';
+import {Link} from 'react-router-dom'
+import Logo from '../../assets/img/LOGOTTFLIX.png';
 import './Menu.css';
-import ButtonLink from './components/ButtonLink';
 import Button from '../Button';
+
+// SPA -> simple page application
+
 function Menu(){
     return(
         
         <nav className="Menu">   
-            <a href="/">
+            <Link to="/">
                 <img class="Logo" src={Logo} alt="TTFlix logo"></img>
-            </a>
+            </Link>
 
-            <Button as="a" className="ButtonLink" href="/">
+            <Button as={Link} className="ButtonLink" to="/cadastro/Video">
                 New video
             </Button>
         </nav>
