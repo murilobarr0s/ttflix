@@ -8,7 +8,7 @@ function CadastroCategoria(){
         <h1>Cadastro de Categoria</h1>
 
         <label>
-          Nome da Categoria:
+          Nome:
           <input type="text"/>
         </label>
         <button>
