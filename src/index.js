@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import CadastroCategoria from './pages/cadastro/Categoria';
 
 
-const Pagina404 = () => (<div> Página 404 </div>)
+const Pagina404 = () => (<div> <h1> ERROR 404</h1> </div>)
 
 //BrowserRouter -> representa as rotas dos navegadores
 //Switch -> suas entradas possíveis

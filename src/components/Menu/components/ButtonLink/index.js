@@ -4,7 +4,7 @@ function ButtonLink(props){
     console.log(props);
     return(      
         <a className={props.className} href={props.href}>
-            Novo vídeo
+            New video
         </a>
     );
 }
