@@ -59,38 +59,14 @@ function CadastroCategoria(){
             value={values.nome}
             onChange={handleChange}
           />
-          
-          {/* <div>
-            <label>
-                  Description: 
-                <textarea
-                  type="textarea"
-                  value = {values.descricao}
-                  name="descricao"
-                  onChange={handleChange}
-                />
-            </label>
-          </div> */}
 
           <FormField
             label= "Description"
-            type = "text"
+            type = "textarea"
             name = "descricao"
             value={values.descricao}
             onChange={handleChange}
           />
-           
-          {/* <div>
-            <label>
-                Color: 
-                <input
-                  type="color"
-                  value = {values.cor}
-                  name="cor"
-                  onChange={handleChange}
-                />
-            </label>
-          </div> */}
 
           <FormField
             label="Color"

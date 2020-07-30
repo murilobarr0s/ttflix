@@ -13,7 +13,7 @@ function Home() {
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"Relive the full Men's Singles Table Tennis Gold Medal Match from the 2016 Summer Olympic Games in Rio de Janeiro. Once more, it was the Chinese who dominated the Olympic tournament, as Ma Long-faced his fellow countryman Zhang Jike in the final. Who would become an Olympic champion? Enjoy watching and find out here!"}
+        videoDescription={"Review all the highlights from the Ma Long vs Xu Xin at the 2020 ITTF World Tour Platinum, German Open."}
       />
 
       <Carousel
