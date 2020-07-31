@@ -1,0 +1,17 @@
+{
+
+  "categorias":[
+    {
+      "id":1,
+      "nome" : "The Best Points",
+      "descricao":"ITTF",
+      "cor": "#000"
+    },
+    {
+      "id":2,
+      "nome" : "Tribute",
+      "descricao":"ITTF",
+      "cor": "#000"
+    }
+  ]
+}
