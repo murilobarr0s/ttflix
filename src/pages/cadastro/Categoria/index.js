@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hocks/useForm';
 
 // ANOTAÇÕES (AULA 3)
 // State: Quando vc tem muita coisa em sua aplicação, ele guarda os dados dos estados das ações
@@ -11,30 +12,16 @@ import Button from '../../../components/Button';
 
 // O React sempre recebe primeiro a informação que vc está querendo processar, e depois "renderiza" p/ a sua tela!
 
-
 function CadastroCategoria() {
   const valoresIniciais = {
     titulo: '',
     descricao: '',
     cor: '',
   };
+
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value, // nome:'value'
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
-  //
 
   // http://localhost:8080/categorias
   useEffect(() => {
@@ -67,14 +54,14 @@ function CadastroCategoria() {
           values,
         ]);
 
-        setValues(valoresIniciais);
+        clearForm();
       }}
       >
 
         <FormField
           label="Name"
           type="text"
-          name="nome"
+          name="titulo"
           value={values.titulo}
           onChange={handleChange}
         />
