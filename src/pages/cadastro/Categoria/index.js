@@ -11,11 +11,10 @@ import Button from '../../../components/Button';
 
 // O React sempre recebe primeiro a informação que vc está querendo processar, e depois "renderiza" p/ a sua tela!
 
-// PAROU NO MINUTO 20:55
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '',
   };
@@ -57,7 +56,7 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Add Category:
-        {values.nome}
+        {values.titulo}
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
@@ -76,7 +75,7 @@ function CadastroCategoria() {
           label="Name"
           type="text"
           name="nome"
-          value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -109,8 +108,8 @@ function CadastroCategoria() {
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria}`}>
-            {categoria.nome}
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
